@@ -1,0 +1,553 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header
+{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    padding: 30px 40px;
+    /* background-color: cadetblue; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo
+{
+    font-size: xx-large;
+    float: left;
+}
+
+header>ul
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+header>ul>li
+{
+    position: relative;
+}
+header>ul>li>a
+{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size:large;
+}
+.search-box
+{
+    transition: 2s;
+    margin-left:-100px;
+    position: absolute;
+    height: 40px;
+}
+.txt-search
+{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: darkgray;
+    color: white;
+    width: 0;
+    transition: 0.5s ease-in-out;
+}
+.btn-search
+{   
+    /* display: block; */
+    padding: 7px;
+    background-color: rgb(139, 137, 137);
+    border-radius: 20px;
+    color: orangered;
+    margin-left: -30px;
+    /* margin-top: 5px; */
+    transition: 1s;
+}
+.search-box:hover >.txt-search
+{
+    width: 200px;
+    margin-left: -100px;
+}
+.search-box:hover >.btn-search
+{
+    background-color: white;
+}
+
+/* header complate */
+
+.banner img
+{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+}
+
+.text
+{
+    text-align: center;
+    padding: 30px;
+    font-size: x-large;
+    color: gray;
+    /* animation: type 4s steps(1000,end); */
+}
+
+.text span
+{
+    animation: pipe_blink .8s infinite;
+}
+
+@keyframes pipe_blink {
+    0%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+
+/* blink pipe over */
+
+.acordion
+{
+    width: 75%;
+    margin: auto;
+    height: 250px;
+    display: flex;
+    overflow: hidden;
+    /* margin: 20px 0px; */
+}
+
+.acordion>ul
+{
+    display: table;
+    padding: 20px;
+    width: 100%;
+}
+.acordion>ul>li
+{
+    color: white;   
+    cursor: pointer;
+    display: table-cell;
+    vertical-align: bottom;
+    justify-content: space-between;
+    padding: 20px;
+    width: 8%;
+    transition: 0.5s ease;
+}
+
+.acordion>ul>li:hover
+{
+    transition: 0.5s ease;
+    width:70%;
+}
+
+
+.acordion ul li:nth-child(1)
+{
+    background: url(images/img1.jpeg) no-repeat center center ;
+    background-size: cover;
+}
+.acordion ul li:nth-child(2)
+{
+    background: url(images/img2.jpeg) no-repeat center center ;
+    background-size: cover;
+}
+.acordion ul li:nth-child(3)
+{
+    background: url(images/img3.jpeg) no-repeat center center ;
+    background-size: cover;
+}
+.acordion ul li:nth-child(4)
+{
+    background: url(images/img4.jpeg) no-repeat center center ;
+    background-size: cover;
+}
+.acordion ul li:nth-child(5)
+{
+    background: url(images/img5.jpeg) no-repeat center center ;
+    background-size: cover;
+}
+.acordion ul li:nth-child(6)
+{
+    background: url(images/img6.jpeg) no-repeat center center ;
+    background-size: cover;
+}
+
+/* acordion over */
+
+
+
+.threebox
+{
+    width: 80%;
+    margin: auto;
+}
+.row
+{
+    width: 100%;
+    padding-top: 20px;
+}
+.threebox>.row>.box
+{
+    text-align: center;
+    height: 300px;
+    overflow: hidden;
+    width: 33.33%;
+    float: left;
+    padding: 40px 80px;
+}
+.threebox>.row>.box:hover
+{
+    transform: scale(1.1);
+    z-index: 1;
+}
+.threebox>.row>.boxpink
+{
+    background-color: rgba(255, 192, 203,0.5);
+}
+.threebox>.row>.boxpurple
+{
+    background-color: rgba(128, 0, 128,0.5);
+}
+.threebox>.row>.boxorange
+{
+    background-color: rgba(255, 165, 0,0.5);
+}
+
+/* threebox over */
+
+.content
+{
+    clear: both;
+    padding-top: 40px;
+}
+.content p
+{
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+/* content over */
+
+
+.img_gallery
+{
+    width: 100%;
+    background-color: orange;
+}
+.img_gallery>.imgcontainer
+{
+    width: 60%;
+    padding: 20px;
+    margin: auto;
+}
+.img_gallery>.imgcontainer>img
+{
+    height: 100px;
+    width: 100px;
+}
+
+.post-container
+{
+    margin-top:50px;
+}
+.post
+{
+    width: 50%;
+    float: left;
+    min-height: 400px;
+    color: white;
+    padding: 20px;
+}
+.post h2
+{
+    font-size: xx-large;
+}
+.greenpost
+{
+    background-color: rgba(108, 184, 108, 0.7);
+}
+.greenpost:hover
+{
+    background-color: rgba(108,184,108,1.0);
+}
+
+.greenpost>.inner>.inner-post
+{
+    width: 50%;
+    margin: auto;
+    min-height:300px;
+    margin-top: 20px;
+    margin-left: 100px;
+    position: absolute;
+    border: 2px solid black;
+}
+
+.greenpost>.inner>.inner-post>img
+{
+    width: 100%;
+    height: 300px;
+    opacity: 1;
+}
+
+.inner-effect
+{
+    padding: 10px;
+    border-left: 5px solid white;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: 200px;
+    margin-top: -250px;
+    position:absolute;
+}
+
+.inner-effect>h3
+{
+    display: none;
+    transition: 5s;
+}
+.inner-effect:hover h3
+{
+    transition: 5s;
+    display: block;
+}
+
+
+.redpost
+{
+    background-color: rgb(185, 103, 103,0.7);
+}
+.redpost:hover
+{
+    background-color: rgba(185,103,103,1.0);
+}
+.purplepost
+{
+    background-color: rgb(211, 106, 211,0.7);
+}
+.purplepost:hover
+{
+    background-color: rgb(211, 106, 211,1.0);
+}
+.yellowpost
+{
+    background-color: rgba(224, 218, 50, 0.7);
+}
+.yellowpost:hover
+{
+    background-color: rgb(224,218,50,1.0);
+}
+
+.post>.inner>p:nth-of-type(odd)
+{
+    border-left:2px solid black;
+}
+
+.post>.inner>p:nth-of-type(even)
+{
+    border-right:2px solid black;
+}
+.post>.inner>p
+{
+    padding: 10px;
+}
+
+.post-bottom
+{
+    margin: 20px;
+}
+.post .post-bottom::before
+{
+
+    content: "__ ";
+}
+
+.price-table
+{
+    margin-top: 50px;
+    width: 60%;
+    margin-left: 40%;
+}
+.price-table>.plan
+{
+    text-align: center;
+    width: 25%;
+    float: left;
+    border: 1px solid grey;
+}
+.price-table>.plan>h3
+{
+    background-color: rgb(213, 210, 210);
+    padding: 20px;    
+}
+.price-table>.plan>h3>span
+{
+        /* display: block; */
+    padding: 20px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.43);
+    box-shadow: 5px 5px 5px gray inset;
+}
+.price-table>.plan>ul
+{
+    list-style-type: none;
+}
+.price-table>.plan>ul>li
+{
+    padding: 10px;
+    border-bottom: 1px solid rgb(218, 216, 216);
+}
+
+#popular
+{
+    /* scale: 1.1; */
+    margin-top: -10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 5px gray;
+}
+#popular>h3
+{
+    border-radius: 10px;
+}
+
+
+.price-table>.plan>ul>li:first-child
+{
+    padding: 40px;
+}
+.price-table>.plan>ul>li>.signup
+{    
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: green;
+}
+
+
+footer
+{
+    background-color: rgb(80, 80, 80);
+    text-align: center;
+    padding: 20px;
+    clear: both;
+    margin-top: 60px;
+    color: white;
+}
+footer>.media-icons
+{
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+footer>.media-icons>.icon
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+.icon:nth-child(1):hover
+{
+    background-color: rgb(107, 154, 241);    
+}
+.icon:nth-child(1):hover span
+{
+    color: rgb(107, 154, 241);    
+}
+
+.icon:nth-child(2):hover
+{
+    background-color: rgb(107, 228, 241);    
+}
+.icon:nth-child(2):hover span
+{
+    color: rgb(107, 228, 241);    
+}
+
+.icon:nth-child(3):hover
+{
+    background-color: black;    
+}
+.icon:nth-child(3):hover span
+{
+    color: black;    
+}
+
+.icon:nth-child(4):hover
+{
+    background-color: rgb(245, 52, 171);    
+}
+
+.icon:nth-child(4):hover span
+{
+    color: rgb(245, 52, 171);    
+}
+
+.icon:nth-child(5):hover
+{
+    background-color: rgb(246, 77, 16);    
+}
+
+.icon:nth-child(5):hover span
+{
+    color: rgb(246, 77, 16);    
+}
+
+
+
+
+
+footer>.media-icons>.icon
+{
+    color: white; 
+    text-decoration: none;   
+}
+
+
+footer>.media-icons>.icon>i
+{
+    position: absolute;
+}
+
+footer>.media-icons>.icon>span
+{
+    display: none;
+    /* opacity: 0; */
+    transition: 2s ease;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+footer>.media-icons>.icon:hover span
+{
+    /* opacity: 1; */
+    display: block;
+    margin-top: -100px;
+    transition: 2s ease;
+    background-color: white;
+    padding: 5px;
+    min-width:100px;
+}
